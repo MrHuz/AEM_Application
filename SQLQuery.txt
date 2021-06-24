@@ -1,0 +1,10 @@
+SELECT PlatformWell.UniqueName,
+PlatformWell.ID,
+PlatformWell.PlatformID,
+WellTable.WellName,
+PlatformWell.Latitude,
+Platform.Longitude,
+PlatformWell.CreatedAt,
+PlatformWell.UpdatedAt
+FROM PlatformWell
+INNER JOIN WellTable ON PlatformWell.ID=WellTable.ID;
