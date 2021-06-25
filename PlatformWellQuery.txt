@@ -1,0 +1,9 @@
+CREATE TABLE PlatformWell(
+    ID INT PRIMARY KEY IDENTITY (1, 1) NOT NULL,
+    UniqueName VARCHAR (255),
+    Latitude DECIMAL (10,8),
+    Longitude DECIMAL (11,8),
+    CreatedAt DATETIME,
+    UpdatedAt DATETIME
+    
+);
